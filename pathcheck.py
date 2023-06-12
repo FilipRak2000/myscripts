@@ -1,9 +1,11 @@
+#!/usr/bin/python3
+
 import os 
-path = str(input("Podaj nazwe sciezki:"))
+path = str(input("path name:"))
 
 if os.path.isdir(path):
-    print("its dir")
+    print("it is dir")
 elif os.path.isfile(path):
-    print("file!")
+    print("it is file!")
 else:
-    print("nothing")        
+    print("file or dir doesnt exists")  
